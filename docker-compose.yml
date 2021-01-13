@@ -5,7 +5,7 @@ services:
     container_name: smtp_relay
     restart: always
     ports:
-     - "125:25"
+     - "30211:25"
     environment:
      # # MUST start with : e.g RELAY_NETWORKS=:192.168.0.0/24:10.0.0.0/16
      # # if acting as a relay this or RELAY_DOMAINS must be filled out or incoming mail will be rejected
